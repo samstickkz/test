@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.8.6;
+
+contract SamContract{
+    int number;
+    string name;
+    
+    constructor()  public {
+        number = 50;
+        name = "First sc";
+    }
+    
+    
+   function getNumber() view public  returns (int) {
+        return number;
+    
+    }
+
+    
+    function getName() view public  returns (string memory) {
+        return name;
+        
+    }
+}
